@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Noto+Sans+KR&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.nav-wrap {
+    width: 1300px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.nav-wrap > .top {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.nav-wrap > .top > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-wrap > .top > div > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-wrap > .top > div > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 20%;
+    height: 100%;
+}
+
+.nav-wrap > .top > div > ul > li svg {
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.nav-wrap > .top > div > ul > li svg:hover {
+    transform: scale(1.2);
+}
+
+.sns {
+    width: 20%;
+    height: 100%;
+}
+
+.title {
+    width: 62.5%;
+    height: 100%;
+}
+
+.title h1 {
+    font-family: 'Lato', sans-serif;
+}
+
+.menu {
+    width: 16.5%;
+    height: 100%;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    padding-top: 10px;
+}
+
+.bottom > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+.bottom > ul > li {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.bottom > ul > li a {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.wrap {
+    width: 1300px;
+    height: 100%;
+    margin: 15px auto;
+}
+
+.slide {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+.slide > .imgs {
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+}
+
+.slide > .imgs.active{
+    left: 0%;
+}
+
+.slide > .imgs > img {
+    position: absolute;
+    top: -62%;
+    width: 100%;
+}
+
+.slide > .imgs > .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slide > .imgs > .text p {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.slide-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-btn span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slide-btn .left {
+    left: 100px;
+    top: 45%;
+}
+
+.slide-btn .right {
+    right: 100px;
+    top: 45%;
+}
