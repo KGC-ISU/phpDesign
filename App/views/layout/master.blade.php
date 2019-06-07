@@ -17,6 +17,22 @@
     <title>My Blog</title>
 </head>
 <body>
+    <aside id="submenu">
+        <h2 class="my-3 text-center">서브메뉴</h2>
+        <hr>
+        @if( isset($_SESSION['user']))
+            <a href="/logout" class="sub-login"><i class="fas fa-sign-out-alt"></i><p>로그아웃</p></a>
+            <a href="/post" class="sub-login"><i class="fas fa-edit"></i><p>포스팅</p></a>
+        @else
+            <a href="/login" class="sub-login"><i class="fas fa-sign-in-alt"></i><p>로그인</p></a>
+            <a href="#" class="sub-login"><i class="far fa-clipboard"></i><p>게시글 보기</p></a>
+        @endif
+    </aside>
+
+    <div id="toastList">
+        
+    </div>
+
     <header>
         <div class="nav-wrap">
             <div class="top">
@@ -28,12 +44,12 @@
                     </ul>
                 </div>
                 <div class="title">
-                    <h1>MyBlog</h1>
+                    <a href="/">이상한 나라의 블로그</a>
                 </div>
                 <div class="menu">
                     <ul>
                         <li><i class="fas fa-search"></i></li>
-                        <li><i class="fas fa-bars"></i></li>
+                        <li><span id="btnSub"><i class="fas fa-bars"></i></span></li>
                     </ul>
                 </div>
             </div>
@@ -47,9 +63,13 @@
         </div>
     </header>
 
-
     @yieLd('maincontent')
-    
+     
+    <footer>
+        <div class="foot-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </div>
+    </footer>
 
 </body>
 </html>

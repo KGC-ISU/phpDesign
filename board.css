@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.board-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1300px;
+    height: 650px;
+    margin: 50px auto;
+}
+
+.board-form {
+    width: 85%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #333;
+}
+
+.board-visual {
+    width: 100%;
+    height: 50px;
+    background-color: #01b3eb;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.board-visual p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 100%;
+    height: 92%;
+}
+
+form {
+    padding: 50px;;
+    width: 100%;
+    height: 500px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+form input {
+    width: 100%;
+    height: 45px !important;
+    margin: 20px 0;
+    padding-left: 20px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+}
+
+form textarea {
+    padding: 10px !important;
+    margin-top: 50px;
+    width: 100%;
+    height: 330px !important;
+}
+
+.write-btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 10px 0 0;
+    width: 100%;
+    height: 100px;
+}
+
+.write-btn button {
+    width: 80px;
+    height: 40px;
+    margin: 0px 15px;
+    background-color: #64b5f6 ;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    color: #fff;
+}

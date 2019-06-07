@@ -1,26 +1,20 @@
 @extends('layout/master')
 
 @section('maincontent')
-<div class="row d-flex justify-content-center mt-5">
-    <div class="col-10">
-        <h2 class="my-3 text-center">글쓰기</h2>
+<div class="board-wrap">
+    <div class="board-form">
+        <div class="board-visual">
+            <p>게시글 쓰기</p>
+        </div>
         <form action="/post" method="post">
-            <div class="form-group">
-                <label>글 제목</label>
-                <input class="form-control" type="text" name="title">
-            </div>
-            <div class="form-group">
-                <label>글 내용</label>
-                <textarea rows="10" class="form-control" name="content"></textarea>
-            </div>
-
-            <div class="row">
-                <div class="col-12 text-right">
-                    <button type="submit" class="btn btn-outline-primary">글쓰기</button>
-                    <button type="reset" class="btn btn-outline-danger">취소</button>
-                </div>
+            <input class="form-control" type="text" name="title" placeholder="글 제목을 입력해주세요">
+            <textarea rows="10" class="form-control" name="content" placeholder="글 내용을 입력해주세요"></textarea>
+            <div class="write-btn">
+                <button type="submit">글쓰기</button>
+                <button type="reset">취소</button>
             </div>
         </form>
     </div>
 </div>
+
 @endsection

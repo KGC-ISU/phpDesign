@@ -1,6 +1,8 @@
 import $ from 'jquery';
 
 import './style.css';
+import './login.css';
+import './board.css';
 import './node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 import './node_modules/@fortawesome/fontawesome-free/js/all';
